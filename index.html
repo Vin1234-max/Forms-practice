@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+<img src="Flower.jpg" alt="Flower">
+<video width="320" height="240" controls>
+    <source src="sample_video.mp4" type="video/mp4">
+    
+    
+    </video>
+</head>
+<body>
+    <div>
+    <label>Number 1</label>
+    <input type="text" name="number1" id="number1" placeholder="Enter a single-digit number">
+    <br> +
+    <br>
+    <label>Number 2</label>
+    <input type="text" name="number2" id="number2" placeholder="Enter a single-digit number">
+    <br>
+    <button type="button" class="btn btn-info" onclick="addNumbers()">Submit</button>
+    <br><br>
+    <div class="screen" id="screen1"></div>
+    </div>
+    <script>
+    function addNumbers() {
+        var a = parseInt(document.getElementById("number1").value);
+        var b = parseInt(document.getElementById("number2").value);
+        var c = a + b;
+        document.getElementById("screen1").innerHTML = "Result: " + c;
+    }
+    </script>
+</body>
+</html>
